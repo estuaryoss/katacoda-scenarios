@@ -1,0 +1,34 @@
+{
+  "title": "estuary-agent",
+  "description": "This scenario shows the agent in action with its ability to execute shell commands over REST API.",
+  "difficulty": "Medium",
+  "time": "20",
+  "details": {
+    "steps": [
+      {
+        "title": "Sequential command executor",
+        "text": "step1.md"
+      },
+      {
+        "title": "Parallel command executor",
+        "text": "step2.md"
+      },
+      {
+        "title": "Background command executor",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

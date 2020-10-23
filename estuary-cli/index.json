@@ -1,0 +1,34 @@
+{
+  "title": "estuary-cli",
+  "description": "This scenario highlights how you can interact with a remote machine through REST Api",
+  "difficulty": "Beginner",
+  "time": "5",
+  "details": {
+    "steps": [
+      {
+        "title": "Booting estuary-agent",
+        "text": "step1.md"
+      },
+      {
+        "title": "Non-interactive mode",
+        "text": "step2.md"
+      },
+      {
+        "title": "Interactive mode",
+        "text": "step3.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

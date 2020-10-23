@@ -1,0 +1,42 @@
+{
+  "title": "estuary-discovery",
+  "description": "This scenario shows estuary discovery in action",
+  "difficulty": "Medium",
+  "time": "30",
+  "details": {
+    "steps": [
+      {
+        "title": "Booting Eureka service registry",
+        "text": "step1.md"
+      },
+      {
+        "title": "Booting discovery",
+        "text": "step2.md"
+      },
+      {
+        "title": "Booting agents for distributed testing",
+        "text": "step3.md"
+      },
+      {
+        "title": "Simulating broadcast messages through discovery",
+        "text": "step4.md"
+      },
+      {
+        "title": "Simulating unicast messages through discovery",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

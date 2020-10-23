@@ -1,0 +1,72 @@
+{
+  "title": "estuary-stack",
+  "description": "This scenario shows estuary stack in action",
+  "difficulty": "Medium",
+  "time": "45",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "docker-compose-agent.yaml",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
+          "file": "docker-compose-discovery.yaml",
+          "target": ".",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Booting Eureka service registry",
+        "text": "step1.md"
+      },
+      {
+        "title": "Booting discovery",
+        "text": "step2.md"
+      },
+      {
+        "title": "Booting agent",
+        "text": "step3.md"
+      },
+      {
+        "title": "Booting deployer",
+        "text": "step4.md"
+      },
+      {
+        "title": "Booting discovery through deployer",
+        "text": "step5.md"
+      },
+      {
+        "title": "Booting agent through deployer",
+        "text": "step6.md"
+      },
+      {
+        "title": "Simulating a background command session with the agent",
+        "text": "step7.md"
+      },
+      {
+        "title": "Inspecting Eureka and discovery",
+        "text": "step8.md"
+      },
+      {
+        "title": "About Viewer",
+        "text": "step9.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
