@@ -5,7 +5,7 @@ The client who interacts with the stack **should only implement** a Eureka clien
 Implementing Eureka as the main service registry makes the stack compatible and deployable in the cloud.  
 
 Let's boot up a custom and up-to-date eureka server registry:  
-`docker run -d -p 8080:8080 dinutac/netflixoss-eureka:1.9.25`{{execute}}
+`docker run -d -p 8080:8080 estuaryoss/netflix-eureka:1.10.5`{{execute}}
 
 Let's open a browser page to the server registry, to observe the registration of the services:  
 https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/eureka
