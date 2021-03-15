@@ -1,7 +1,7 @@
 The deployer orchestrates your deployments via REST API.  
 It deploys your dev/test environment using docker-compose templates on docker, or it acts as proxy in front of k8s cluster using kubectl.
 
-More info about how it works you can find by visiting [wiki](https://github.com/dinuta/estuary-deployer/wiki).
+More info about how it works you can find by visiting [wiki](https://github.com/estuaryoss/estuary-deployer/wiki).
 
 Estuary deployer manages the deployments:
  - create deployment
@@ -16,10 +16,10 @@ The first required step is to create a network for the deployer, which will be u
 `docker network create estuarydeployer`{{execute}}
 
 Let's start the first deployer service and instruct it to connect to the Eureka registry:  
-`docker run -d -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8083 -p 8083:8080 -v /var/run/docker.sock:/var/run/docker.sock --net=estuarydeployer dinutac/estuary-deployer:4.0.8`{{execute}}
+`docker run -d -e HTTP_AUTH_TOKEN=None -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8083 -p 8083:8080 -v /var/run/docker.sock:/var/run/docker.sock --net=estuarydeployer estuaryoss/deployer:4.2.0`{{execute}}
 
-Let's verify that both services started:  
-`curl http://[[HOST_IP]]:8083/docker/about | json_pp`{{execute}} 
+Let's verify that the Deployer started:  
+`curl -H Token:None http://[[HOST_IP]]:8083/docker/about | json_pp`{{execute}} 
 
 Let's list again the eureka apps, and see the new service registered:  
 `curl http://[[HOST_IP]]:8081/eurekaapps | json_pp`{{execute}}
@@ -27,4 +27,4 @@ Let's list again the eureka apps, and see the new service registered:
 You can now see in the browser the new service registred in Eureka.   
 https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/eureka
 
-For more info about the features and configuration, please visit [estuary deployer](https://github.com/dinuta/estuary-deployer).
+For more info about the features and configuration, please visit [estuary deployer](https://github.com/estuaryoss/estuary-deployer).

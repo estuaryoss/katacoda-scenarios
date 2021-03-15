@@ -1,0 +1,7 @@
+env:
+  FOO: "BAR"
+client_script:
+  - -sys --args ls -lrt
+  - -sys --args echo;;"I run on client"
+script:
+  - echo "executed remote script cmd"

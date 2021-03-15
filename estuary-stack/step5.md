@@ -19,7 +19,7 @@ Let's connect this container to the deployer's net to be accessible. The deploym
 `curl -X POST -i http://[[HOST_IP]]:8083/docker/deployments/network/$DEPLOYMENT_DISCOVERY`{{execute}}
 
 Let's access the discovery through the deployer's net:  
-`curl http://[[HOST_IP]]:8083/docker/container/$DEPLOYMENT_DISCOVERY/about | json_pp`{{execute}}
+`curl -H Token:None http://[[HOST_IP]]:8083/docker/container/$DEPLOYMENT_DISCOVERY/about | json_pp`{{execute}}
 
 You can now see in the browser the new service registred in Eureka with the name having the deployment hash.  
 This is the difference between a service registered directly to Eureka, and other registered through the deployer. 

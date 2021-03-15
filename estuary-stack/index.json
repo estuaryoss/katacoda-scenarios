@@ -24,27 +24,23 @@
         "text": "step1.md"
       },
       {
-        "title": "Booting discovery",
+        "title": "Booting Discovery",
         "text": "step2.md"
       },
       {
-        "title": "Booting agent",
+        "title": "Booting Agent",
         "text": "step3.md"
       },
       {
-        "title": "Booting deployer",
+        "title": "Booting Deployer",
         "text": "step4.md"
       },
       {
-        "title": "Booting discovery through deployer",
-        "text": "step5.md"
-      },
-      {
-        "title": "Booting agent through deployer",
+        "title": "Booting Agent through deployer",
         "text": "step6.md"
       },
       {
-        "title": "Simulating a background command session with the agent",
+        "title": "Simulating a background command session with the Agent",
         "text": "step7.md"
       },
       {
@@ -52,7 +48,7 @@
         "text": "step8.md"
       },
       {
-        "title": "About Viewer",
+        "title": "Booting Viewer",
         "text": "step9.md"
       }
     ],

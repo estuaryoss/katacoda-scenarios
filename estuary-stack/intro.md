@@ -4,7 +4,8 @@ This is estuary stack, a powerful and flexible stack which can be used as:
 - standalone services, as agents for test & software remote control
 - exposing your CLI app remotely over REST API
 
-Before starting the scenario, please read the high-level description and the motivation [here](https://dinuta.github.io). It should not take more than 10 minutes.  
+Before starting the scenario, please read the high-level description and the motivation [here](https://estuaryoss.github.io).
+It should not take more than 10 minutes.  
 
 In this scenario you will learn about:
 - how you can deploy a complete dev/test environment and interact with the services within

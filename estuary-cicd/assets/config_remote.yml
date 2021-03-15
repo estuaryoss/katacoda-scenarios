@@ -1,0 +1,12 @@
+env:
+  ISOLATED: "true"
+  MINE: "YOURS"
+before_script:
+  - echo before_script
+  - hostname
+script:
+  - echo script
+  - whoami
+after_script:
+  - echo after_script
+  - ping -c 7 127.0.0.1

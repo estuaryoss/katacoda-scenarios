@@ -1,0 +1,6 @@
+client_script:
+  - -put --args cicd_flow.sh;;/tmp/cicd_flow.sh
+  - -get --args /etc/os-release;;os-release.txt
+script:
+  - chmod +x /tmp/cicd_flow.sh
+  - /tmp/cicd_flow.sh

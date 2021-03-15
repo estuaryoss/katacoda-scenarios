@@ -25,6 +25,6 @@ https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/eure
 
 For more info about the features and configuration, please visit [estuary-discovery](https://github.com/estuaryoss/estuary-discovery).
 
-For a distributed example please [see this wiki](https://github.com/estuaryoss/estuary-agent/wiki/Distributed-example)
+For a distributed example please [see this wiki](https://github.com/estuaryoss/estuary-agent-go/wiki/Distributed-example)
 
 ** [json_pp](https://manpages.ubuntu.com/manpages/trusty/man1/json_pp.1.html) prettifies the output, and it's already installed on Ubuntu distros

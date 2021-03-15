@@ -1,19 +1,19 @@
 Let's have an overview of the sequential mode.
 
 Download the main service binary (platform-specific)    
-`wget https://github.com/dinuta/estuary-agent/releases/download/4.0.8/main-linux`{{execute}}
+`wget https://github.com/estuaryoss/estuary-agent-go/releases/download/4.2.0/estuary-agent-go`{{execute}}
 
 Download the binary which permits running commands in the background (platform-specific)    
-`wget -O start.py https://github.com/dinuta/estuary-agent/releases/download/4.0.8/start.py-linux`{{execute}}
+`wget https://github.com/estuaryoss/runcmd/releases/download/1.0.0/runcmd-linux -O runcmd`{{execute}}
 
 Change the permissions for main service:   
-`chmod +x main-linux`{{execute}}
+`chmod +x estuary-agent-go`{{execute}}
 
 Change the permissions for the start.py executable:   
-`chmod +x start.py`{{execute}}
+`chmod +x runcmd`{{execute}}
 
 Start the service  
-`nohup ./main-linux &`{{execute}}
+`nohup ./estuary-agent-go &`{{execute}}
 
 Check if the service has started  
 `curl http://[[HOST_IP]]:8080/ping`{{execute}}

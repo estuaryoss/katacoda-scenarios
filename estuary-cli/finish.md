@@ -5,4 +5,4 @@ The estuary-cli can be used for the following use cases:
 - Remote debugging
 - Remote CLI application control
 
-More information you can find [here](https://github.com/dinuta/estuary-cli)
+More information you can find [here](https://github.com/estuaryoss/estuary-cli)

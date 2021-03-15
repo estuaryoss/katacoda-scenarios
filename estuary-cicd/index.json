@@ -1,0 +1,67 @@
+{
+  "title": "estuary-cicd",
+  "description": "This scenario highlights how you can execute small cicd flows using REST API",
+  "difficulty": "Beginner",
+  "time": "5",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "cicd_flow.sh",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
+          "file": "config_client.yml",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
+          "file": "config_exit_1.yml",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
+          "file": "config_files_upload_download.yml",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
+          "file": "config_remote.yml",
+          "target": ".",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Booting estuary-agent",
+        "text": "step1.md"
+      },
+      {
+        "title": "Local commands",
+        "text": "step2.md"
+      },
+      {
+        "title": "Remote commands",
+        "text": "step3.md"
+      },
+      {
+        "title": "File upload & download",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}

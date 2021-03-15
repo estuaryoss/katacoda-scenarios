@@ -1,0 +1,14 @@
+env:
+  FOO: "BAR"
+before_install:
+  - echo before_install
+install:
+  - echo install
+after_install:
+  - echo after_install
+before_script:
+  - echo before_script
+script:
+  - echo script
+after_script:
+  - invalid_command

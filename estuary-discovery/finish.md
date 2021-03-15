@@ -4,6 +4,6 @@ The service helps to get an overview of the stack which was deployed within the 
 
 References:  
 https://dinuta.github.io/  
-https://github.com/dinuta/estuary-discovery  
-https://hub.docker.com/r/dinutac/estuary-discovery
+https://github.com/estuaryoss/estuary-discovery  
+https://hub.docker.com/r/estuaryoss/discovery
 

@@ -11,8 +11,11 @@ Let's list deployments:
 There should be 2 deployments, one in each deployer service.
 
 Let's list current test sessions:  
-`curl http://[[HOST_IP]]:8081/commandsdetached | json_pp`{{execute}}    
+`curl -H 'Token:None' http://[[HOST_IP]]:8081/commandsdetached | json_pp`{{execute}}    
 There should be 2 background command sessions, one on each agent service.
 
-And also you can inspect the eureka apps:    
-https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/eureka
+You can inspect the eureka apps through the Eureka registry:    
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/eureka  
+
+You can also inspect the eureka apps through the Discovery:    
+https://[[HOST_SUBDOMAIN]]-8081-[[KATACODA_HOST]].environments.katacoda.com/eurekaapps

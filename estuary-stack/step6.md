@@ -14,7 +14,7 @@ Let's connect this container to the deployer's net to be accessible.
 `curl -X POST -i http://[[HOST_IP]]:8083/docker/deployments/network/$DEPLOYMENT_AGENT`{{execute}}
 
 Let's access the agent through the deployer's net:  
-`curl http://[[HOST_IP]]:8083/docker/container/$DEPLOYMENT_AGENT/about | json_pp`{{execute}}
+`curl -H Token:None http://[[HOST_IP]]:8083/docker/container/$DEPLOYMENT_AGENT/about | json_pp`{{execute}}
 
 You can now see in the browser the new service registred in Eureka with the name having the deployment hash.   
 https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/eureka
