@@ -1,4 +1,4 @@
-Now let's inspect the stack through estuary discovery:
+Now let's inspect the stack through the Discovery service:
 - apps registered in Eureka
 - deployments
 - command sessions (background commands) from the agents

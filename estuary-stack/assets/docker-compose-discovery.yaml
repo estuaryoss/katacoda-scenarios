@@ -1,10 +1,10 @@
-#version: '3.7'
-#services:
-#  container:
-#    image: estuaryoss/discovery:4.2.0
-#    environment:
-#      EUREKA_SERVER: "{{eureka_server}}"
-#      APP_IP_PORT: "{{app_ip_port}}/docker/container/{{deployment_id}}"
-#      HTTP_AUTH_TOKEN: None
-#    expose:
-#      - "8080"
+version: '3.7'
+services:
+  container:
+    image: estuaryoss/discovery:4.2.1
+    environment:
+      EUREKA_SERVER: "{{eureka_server}}"
+      APP_IP_PORT: "{{app_ip_port}}/docker/container/{{deployment_id}}"
+      HTTP_AUTH_TOKEN: None
+    expose:
+      - "8080"

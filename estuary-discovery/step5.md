@@ -14,7 +14,7 @@ Now let's list the active command sessions on both agents:
 
 `curl http://[[HOST_IP]]:8084/commanddetached | json_pp > agent3.json`{{execute}}
 
-We can do the same thing through the discovery:  
+We can do the same thing through the Discovery service:  
 `curl http://[[HOST_IP]]:8081/commandsdetached | json_pp > discovery_all_agents.json`{{execute}}
 
 The broadcast command propagated to all agents. All agents have now different command session IDs: **1,2,3**;
