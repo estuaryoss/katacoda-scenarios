@@ -27,6 +27,11 @@
           "chmod": "+x"
         },
         {
+          "file": "config_remote_fail_on_first_err_server.yml",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
           "file": "config_remote.yml",
           "target": ".",
           "chmod": "+x"
@@ -43,12 +48,16 @@
         "text": "step2.md"
       },
       {
-        "title": "Remote commands",
+        "title": "Remote commands batch",
         "text": "step3.md"
       },
       {
-        "title": "File upload & download",
+        "title": "Remote commands conditional progress",
         "text": "step4.md"
+      },
+      {
+        "title": "File upload & download",
+        "text": "step5.md"
       }
     ],
     "intro": {
