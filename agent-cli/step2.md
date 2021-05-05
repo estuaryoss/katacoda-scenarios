@@ -1,5 +1,5 @@
 Download the CLI (binary & platform specific)  
-`wget -O main-cli https://github.com/estuaryoss/estuary-cli/releases/download/4.1.1/main-linux`{{execute}}
+`wget -O main-cli https://github.com/estuaryoss/agent-cli/releases/download/4.1.1/main-linux`{{execute}}
 
 Change the permissions  
 `chmod +x main-cli`{{execute}}
