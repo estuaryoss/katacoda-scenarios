@@ -8,7 +8,7 @@ It also can be used as an agent to control SUT (integration testing) during the 
 Some use cases are documented in [wiki](https://github.com/estuaryoss/estuary-agent/wiki).
 
 Let's start the agent service and instruct it to register to the eureka server registry:  
-`docker run -d --name=agent-direct -p 8082:8080 -e HTTP_AUTH_TOKEN=None -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8082 estuaryoss/agent-go:4.2.0`{{execute}}
+`docker run -d --name=agent-direct -p 8082:8080 -e HTTP_AUTH_TOKEN=None -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8082 estuaryoss/agent-go:4.2.1`{{execute}}
 
 Let's verify that the agent service started:  
 `curl -H Token:None http://[[HOST_IP]]:8082/about | json_pp`{{execute}} 

@@ -9,7 +9,7 @@ It also supports unicast and broadcast messages to the agents, making it very us
 - distributed test sessions with different configurations > unicast message
 
 Let's start the discovery service and instruct it to register to the Eureka server registry:  
-`docker run -d --name=discovery-direct -p 8081:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8081 estuaryoss/discovery:4.2.1`{{execute}}
+`docker run -d --name=discovery-direct -p 8081:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8081 estuaryoss/discovery:4.2.2`{{execute}}
 
 Let's verify that the service started:  
 `curl http://[[HOST_IP]]:8081/about | json_pp`{{execute}}  

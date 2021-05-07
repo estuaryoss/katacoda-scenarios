@@ -16,7 +16,7 @@ The first required step is to create a network for the deployer, which will be u
 `docker network create estuarydeployer`{{execute}}
 
 Let's start the first deployer service and instruct it to connect to the Eureka registry:  
-`docker run -d -e HTTP_AUTH_TOKEN=None -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8083 -p 8083:8080 -v /var/run/docker.sock:/var/run/docker.sock --net=estuarydeployer estuaryoss/deployer:4.2.1`{{execute}}
+`docker run -d -e HTTP_AUTH_TOKEN=None -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8083 -p 8083:8080 -v /var/run/docker.sock:/var/run/docker.sock --net=estuarydeployer estuaryoss/deployer:4.2.2`{{execute}}
 
 Let's verify that the Deployer started:  
 `curl -H Token:None http://[[HOST_IP]]:8083/docker/about | json_pp`{{execute}} 
