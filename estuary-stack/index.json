@@ -50,6 +50,10 @@
       {
         "title": "Booting Viewer",
         "text": "step9.md"
+      },
+      {
+        "title": "Discovery CLI: Alternative to Viewer",
+        "text": "step10.md"
       }
     ],
     "intro": {

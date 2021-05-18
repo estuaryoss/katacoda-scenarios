@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   container:
-    image: estuaryoss/discovery:4.2.2
+    image: estuaryoss/discovery:4.2.3
     environment:
       EUREKA_SERVER: "{{eureka_server}}"
       APP_IP_PORT: "{{app_ip_port}}/docker/container/{{deployment_id}}"

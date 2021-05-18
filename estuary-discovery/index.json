@@ -24,6 +24,10 @@
       {
         "title": "Simulating unicast messages through discovery",
         "text": "step5.md"
+      },
+      {
+        "title": "View Agents commands through discovery's web view",
+        "text": "step6.md"
       }
     ],
     "intro": {
