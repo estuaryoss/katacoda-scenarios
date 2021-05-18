@@ -13,7 +13,7 @@ Let's create a configuration where we specify the Eureka server:
 `echo eureka: \"http://[[HOST_IP]]:8080/eureka/v2\" > config.yaml`{{execute}}
 
 Let's print the stack information:
-`./discovery-cli --token=None --file="config.yaml"`{{execute}}
+`./discovery-cli --token=None --file="config.yaml > output.txt"`{{execute}}
 
 
 For more info about the features and configuration, please visit [discovery-cli](https://github.com/estuaryoss/discovery-cli).
