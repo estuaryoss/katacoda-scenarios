@@ -24,6 +24,10 @@
       {
         "title": "Simulating unicast messages through discovery",
         "text": "step5.md"
+      },
+      {
+        "title": "Web view",
+        "text": "step6.md"
       }
     ],
     "intro": {
