@@ -8,11 +8,11 @@ It also can be used as an agent to control SUT (integration testing) during the 
 Some use cases are documented in [wiki](https://github.com/dinuta/estuary-agent/wiki).
 
 Let's start 3 agents and instruct them to register to the eureka server registry:  
-`docker run -d --name=agent1 -p 8082:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8082 estuaryoss/agent-go:4.2.1`{{execute}}
+`docker run -d --name=agent1 -p 8082:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8082 -e HTTP_AUTH_TOKEN=None estuaryoss/agent-go:4.2.1`{{execute}}
 
-`docker run -d --name=agent2 -p 8083:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8083 estuaryoss/agent-go:4.2.1`{{execute}}
+`docker run -d --name=agent2 -p 8083:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8083 -e HTTP_AUTH_TOKEN=None estuaryoss/agent-go:4.2.1`{{execute}}
 
-`docker run -d --name=agent3 -p 8084:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8084 estuaryoss/agent-go:4.2.1`{{execute}}
+`docker run -d --name=agent3 -p 8084:8080 -e EUREKA_SERVER=http://[[HOST_IP]]:8080/eureka/v2 -e APP_IP_PORT=[[HOST_IP]]:8084 -e HTTP_AUTH_TOKEN=None estuaryoss/agent-go:4.2.1`{{execute}}
 
 Let's verify that all three agents started:  
 `curl http://[[HOST_IP]]:8082/about | json_pp`{{execute}}
