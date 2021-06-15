@@ -1,0 +1,13 @@
+version: "3.3"
+x-metadata:
+  replicas: 7
+  name: alpine
+  labels:
+    k1: v1
+    testEnv: lab
+services:
+  alpine:
+    restart: always
+    image: alpine:3.9.4
+    hostname: alpine
+    entrypoint: tail -f /etc/hostname

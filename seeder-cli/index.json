@@ -1,0 +1,68 @@
+{
+  "title": "seeder CLI",
+  "description": "This scenario shows how to spread your deployments with seeder CLI",
+  "difficulty": "Medium",
+  "time": "20",
+  "details": {
+    "assets": {
+      "host01": [
+        {
+          "file": "docker-compose.yaml",
+          "target": ".",
+          "chmod": "+x"
+        },
+        {
+          "file": "alpine.yml",
+          "target": "deployments",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Booting Eureka",
+        "text": "step1.md"
+      },
+      {
+        "title": "Booting Discovery",
+        "text": "step2.md"
+      },
+      {
+        "title": "Booting Deployer",
+        "text": "step3.md"
+      },
+      {
+        "title": "version -> validate -> init",
+        "text": "step4.md"
+      },
+      {
+        "title": "plan",
+        "text": "step5.md"
+      },
+      {
+        "title": "apply",
+        "text": "step6.md"
+      },
+      {
+        "title": "destroy",
+        "text": "step7.md"
+      },
+      {
+        "title": "Discovery CLI",
+        "text": "step8.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:2004"
+  }
+}
