@@ -1,7 +1,7 @@
 To be able to run your small CI/CD flows over REST API you must deploy the Agent.
 
 Download the binary (platform specific)    
-`wget https://github.com/estuaryoss/estuary-agent-go/releases/download/4.2.1/estuary-agent-go`{{execute}}
+`wget https://github.com/estuaryoss/estuary-agent-go/releases/download/v1.2.1/estuary-agent-go`{{execute}}
 
 Change the permissions  
 `chmod +x estuary-agent-go`{{execute}}

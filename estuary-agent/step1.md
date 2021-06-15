@@ -1,7 +1,7 @@
 Let's have an overview of the sequential mode.
 
 Download the main service binary (platform-specific)    
-`wget https://github.com/estuaryoss/estuary-agent-go/releases/download/4.2.1/estuary-agent-go`{{execute}}
+`wget https://github.com/estuaryoss/estuary-agent-go/releases/download/v1.2.1/estuary-agent-go`{{execute}}
 
 Download the binary which permits running commands in the background (platform-specific)    
 `wget https://github.com/estuaryoss/runcmd/releases/download/1.0.0/runcmd-linux -O runcmd`{{execute}}
